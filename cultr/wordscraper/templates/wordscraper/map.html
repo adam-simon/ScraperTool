@@ -1,0 +1,117 @@
+{% load static %}
+<div class="section-title" ng-init="init()">				
+	<h1>Web Scraper</h1>
+	<div class="col-md-12">
+		<div class="row" id="progress-bar">
+			<div class="col-md-3 completed"><span><img src="{% static 'img/tools/web-scraper/icon-completed.png' %}"/></span>Instructions</div>
+			<div class="col-md-3 completed"><span><img src="{% static 'img/tools/web-scraper/icon-completed.png' %}"/></span>Upload a Data</div>
+			<div class="col-md-3 active"><span>3</span>Map Data</div>
+			<div class="col-md-3"><span>4</span>Done !</div>
+		</div>
+		<div class="row">
+			<input type="button" value="Reset Progress" ng-click="resetProgress()" />
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="row round-gray-box">
+		<h2>Map the data columns to the parameters for the scrape job.</h2>
+			<hr/>
+			<div class="col-md-12 map-data">
+				<div class="row bottom-margin-25">
+					<div class="col-md-4 padding-left-0">
+						<div class="col-md-3 padding-left-0">
+							Keywords
+						</div>
+						<div class="col-md-9">
+							<select id="keywords" class="col-md-7"
+									ng-model="selectedKeyword"
+									ng-options="key as key for (key, value) in dropdownData">
+								<option value="">--- Choose ---</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4 padding-left-0">
+						<div class="col-md-3 padding-left-0">
+							Keywords
+							<span>(Optional)</span>
+						</div>
+						<div class="col-md-9">
+							<select id="keywords_opt" class="col-md-7"
+									ng-model="selectedKeywordID"
+									ng-options="key as key for (key, value) in dropdownData">
+								<option value="">--- Choose ---</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row bottom-margin-25">
+					<div class="col-md-4 padding-left-0">
+						<div class="col-md-3 padding-left-0">
+							Websites
+						</div>
+						<div class="col-md-9">
+							<select id="websites" class="col-md-7"
+									ng-model="selectedWebsite"
+									ng-options="key as key for (key, value) in dropdownData">
+								<option value="">--- Choose ---</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4 padding-left-0">
+						<div class="col-md-3 padding-left-0">
+							Websites
+							<span>(Optional)</span>
+						</div>
+						<div class="col-md-9">
+							<select id="websites_opt" class="col-md-7"
+									ng-model="selectedWebsiteID"
+									ng-options="key as key for (key, value) in dropdownData">
+								<option value="">--- Choose ---</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row bottom-margin-25">
+					<div class="col-md-4 padding-left-0">
+						<div class="col-md-3 padding-left-0">
+							Depth
+						</div>
+						<div class="col-md-9">
+							<select id="depth" class="col-md-7"
+									ng-init="selectedDepth = selectedDepth ? selectedDepth : 2"
+									ng-model="selectedDepth">
+								<option value="">--- Choose ---</option>	
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 padding-left-0">
+						<div class="col-md-3 padding-left-0">
+							Email
+						</div>
+						<div class="col-md-9">
+							<input type="email" name="uEmail" id="uEmail" ng-model="userEmail" placeholder="username@mail.com" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row bottom-margin-30">
+			<input type="button" name="goNextPage" value="Next" ng-click="nextPage()" />
+			<input type="button" name="goPreviousPage" value="Previous" ng-click="previousPage()" />
+		</div>
+	</div>
+</div>
+			
+			

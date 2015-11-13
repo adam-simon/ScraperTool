@@ -1,0 +1,96 @@
+{% load static %}
+<div class="section-title" ng-init="init()">				
+	<h1>Web Scraper</h1>
+	<div class="col-md-12">
+		<div class="row" id="progress-bar">
+			<div class="col-md-3 completed"><span><img src="{% static 'img/tools/web-scraper/icon-completed.png' %}"/></span>Instructions</div>
+			<div class="col-md-3 active"><span>2</span>Upload a Data</div>
+			<div class="col-md-3"><span>3</span>Map Data</div>
+			<div class="col-md-3"><span>4</span>Done !</div>
+		</div>
+		<div class="row">
+			<input type="button" value="Reset Progress" ng-click="resetProgress()" />
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="row round-gray-box">
+			<h2>Drag and drop your files below or click Browse</h2>
+			<hr/>
+			<div class="col-md-12">
+				<div class="row">
+					<div id="upload-file" class="col-md-6" ng-model="dragDropFile">Drop Your Files Here</div>
+				</div>
+				<div class="row">
+					<div id="upload-data" class="col-md-5 padding-left-0">
+						<input type="file" id="xlf" name="xlfile" value="Browse" />
+						<div id="select-file"></div>
+					</div>
+				</div>
+			</div>
+			
+			<h2>Choose the file below to display the data</h2>
+			<hr/>
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-12 padding-left-0" id="choose-files">
+						<div ng-repeat="fileName in fileNames" ng-model="fileNames">
+							<span class="fileName" ng-if="fileName == selectedFile" ng-model="selectedFile" ng-click="selectFile(fileName)">
+								<img src="{% static 'img/tools/web-scraper/icon-close.png' %}" ng-click="deleteFile(fileName)" />
+								<a class="selected" >{$ fileName $}</a>
+							</span>
+							<span class="fileName" ng-if="fileName != selectedFile" ng-model="selectedFile" ng-click="selectFile(fileName)">
+								<img src="{% static 'img/tools/web-scraper/icon-close.png' %}" ng-click="deleteFile(fileName)" />
+								<a>{$ fileName $}</a>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 padding-left-0">
+						<div class="table-responsive">
+							<table class="table table-bordered tablesorter" id="data-table" ng-table>
+								<thead>
+									<tr>
+										<th ng-repeat="head in headersSelected" ng-model="headersSelected">
+											{$ head $}
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="item in parsedDataSelected" ng-model="parsedDataSelected">
+										<td scope="row" ng-repeat="head in headersSelected" ng-model="headersSelected">
+											{$ item[head] $}
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-md-push-9">
+						<div class="col-md-4 padding-left-0">Keywords</div>
+						<div class="col-md-8">
+							<select ng-init="selectedPageSize = selectedPageSize ? selectedPageSize : pagesPerFile[0].id"
+									ng-model="selectedPageSize"
+									ng-change="selectPage(selectedPageSize)"
+									ng-options="pageSize.id as pageSize.val for pageSize in pagesPerFile"></select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row bottom-margin-30">
+			<input type="button" name="goNextPage" value="Next" ng-click="nextPage()" />
+			<input type="button" name="goPreviousPage" value="Previous" ng-click="previousPage()" />
+		</div>
+	</div>
+</div>
+
+<!--Javascripts-->                                              
+<!--<script>
+	$(document).ready(function(){                                        
+			$("#data-table").tablesorter();
+		}
+	);
+</script>-->

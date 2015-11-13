@@ -1,0 +1,8 @@
+Django
+gunicorn
+psycopg2
+djangorestframework
+jsonfield
+django-parsley
+celery
+redis

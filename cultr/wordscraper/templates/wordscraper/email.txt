@@ -1,0 +1,3 @@
+Hi {{ first_name }} {{ last_name }},
+Your CULTR web scraper job has been completed. You can download the results here:
+{% url 'wordscraper-job-results' result_id %}

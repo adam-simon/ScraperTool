@@ -1,0 +1,555 @@
+.punchline{
+	font-size:13px;
+	font-weight:bold;
+	color:#fff;
+}
+img.auto{
+	margin:auto;
+	}
+.overlay h2{
+	font-weight:bold;
+	font-size:34px;
+	margin-top:7px;
+	}
+	
+
+#tf-about h1, #tf-acknowledgements h1, #tf-getStarted  h1, #tf-twitter h1{
+	font-size:77px;
+	font-weight:lighter;
+}
+
+#tf-about h3{
+	background:rgba(0,70,20,0.4);
+	font-size:39px;
+	font-weight:lighter;
+	border-radius:10px;
+	padding:10px;
+}
+#tf-about a{
+	font-size:20px;
+	}
+
+#tf-about .container{
+	background:url(../img/about.png);
+	background-size:60%;
+	background-position: center 18%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+	
+/* slider - tool picker*/
+
+#getStarted .item{
+  padding: 10px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  position:relative;
+}
+
+.toolpic-container{
+	width:100%;
+	background:#fff;
+	border-radius:4px;
+	height:172px;
+	}
+.item h4{
+	text-transform:inherit;
+}
+.item p{
+	height:80px;
+}
+.item .btn{
+	padding: 3px 18px;
+	font-size:16px;
+	color:#000;
+	background:#fff;
+}
+
+.item .btn:hover{
+	background:#086385;
+	color:#fff;
+}
+	
+.image_scraper{
+	background:#08852b;
+}
+
+.web_scraper{
+	background:#e1421a;
+}
+
+.tns{
+	background:#fd911a;
+}
+
+.identity_scraper{
+	background:#3984e4;
+}
+
+.image_scraper{
+	background:#08852b;
+}
+.tweet_scraper{
+	background:#a200ff;
+}
+
+
+
+.customNavigation{
+  text-align: center;
+}
+//use styles below to disable ugly selection
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a.prev{
+	float: left;
+	margin-left: -7%;
+}
+a.next{
+	float: right;
+	margin-right: -7%;
+}
+
+a.prev:hover, a.next:hover{
+	opacity:1.0;
+	transition: all 0.5s;
+}
+
+a.prev img, a.next img{
+	width:70%;
+}
+
+a.prev, a.next{
+	opacity:0.2;
+	margin-top:-18%;
+}
+
+.socialmedia{
+	text-align:center;
+	padding:21px 0;
+	}
+.socialmedia img{
+	width:60%;
+	}
+	
+#tf-acknowledgements{
+	padding: 100px 0;
+	background:#08852b;
+	color:#fff;
+	}
+	
+#tf-acknowledgements h1{
+	margin:40px 0;
+}
+
+
+
+.bottom-margin-30{
+	margin-bottom:30px;
+}
+
+
+/*Twitter Network Tool*/
+.navbar-inner{
+	background:#e55733 !important;
+	border-radius:0;
+	margin:0;
+	}
+	.navbar-inner a{
+		color:#fff;
+	}
+	.navbar-inner a:hover{
+		background-color:#3a0c00;
+	}
+	
+	
+	.navbar-inner .navbar-nav > li > a:hover{
+		text-decoration: none;
+		background-color: #3a0c00;
+		transition: all 0.8s;
+	}
+	
+#tf-twitter{
+	padding: 40px 0;
+}
+
+#tf-twitter h1{
+	text-transform:initial;
+	text-align:center;
+}
+
+#tf-twitter h3{
+	text-align:left;
+	font-size:20px;
+	font-weight:400;
+}
+
+#tf-twitter textarea{
+	background:#f6f6f6;
+	padding:10px;
+	resize:none;
+	margin:20px 0;
+}
+
+
+
+/*Twitter Network tool handler*/
+#tf-twitter thead{
+	background:#08852b;
+	color:#fff;
+	}
+#tf-twitter thead tr th:focus{outline:none;}
+#tf-twitter table.tablesorter thead tr .tablesorter-header,
+#tf-scraper table.tablesorter thead tr .tablesorter-header{
+	background:url("../img/sort_both.png") no-repeat center right;
+	cursor: pointer;
+}
+#tf-twitter table.tablesorter thead tr .tablesorter-headerDesc,
+#tf-scraper table.tablesorter thead tr .tablesorter-headerDesc{
+	background:url("../img/sort_desc.png") no-repeat center right;
+}
+#tf-twitter table.tablesorter thead tr .tablesorter-headerAsc,
+#tf-scraper table.tablesorter thead tr .tablesorter-headerAsc{
+	background:url("../img/sort_asc.png") no-repeat center right;
+}
+#tf-twitter td{text-align:left; font-weight:bold;}
+#tf-twitter nav{text-align:right;}	
+.pagination{margin:0;}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{border-radius:0;}
+
+.gap1{padding:10px 0;}
+
+
+.btn-group{width:100%;}
+.btn-group button{
+	width:100%;
+	background:#de502d;
+	font-weight:bold;
+	color:#fff;
+	border:none;
+	font-size:16px;
+	font-weight:bold;
+	text-align:left;
+	}
+.btn-group button:hover{
+	background:#bb2500;
+	color:#fff;
+}
+
+.btn-group ul{width:100%; transition: all 0.8s;}
+.btn-group ul li{padding:5px; font-size:16px; font-weight:bold; cursor:pointer;}
+
+.btn-group.open .dropdown-toggle{box-shadow:none;}
+
+.dropdown-menu{
+	 transition: all 0.8s;
+}
+#tf-twitter h5{text-transform:initial; font-size:20px;}
+#tf-twitter input[type=checkbox]{
+	width:24px;
+	height:24px;
+	background:#f6f6f6;
+	border:1px solid #d9d9d9;
+}
+#tf-twitter label {margin-right:15px;}
+#tf-twitter label span{display:block; float:left; padding:1px 3px 0 6px; font-size:20px;}
+
+#tf-twitter button.btn.tf-btn.btn-default{padding: 10px 20px; margin-left:10px; text-transform:initial;}
+
+div.fRight{float:right;}
+div.fLeft{float:left;}
+
+
+/* Progress Bar */
+#progress-bar div{
+	background:#df2d00 url("../img/tools/web-scraper/progress-bar-right-bg-common.png") no-repeat right top;
+	border-top-left-radius:75px;
+	border-bottom-left-radius:75px;
+	margin-left:-20px;
+	color:#fff;
+	font-size:19px;
+	font-weight:bold;
+	padding:7px 20px 7px 0;
+	width:26.3%;
+	cursor:pointer;
+}
+#progress-bar div span{
+	display:block;
+	float:left;
+	margin:0 20px 0 15px;
+	}
+#progress-bar div:nth-child(1){
+	margin-left:0;
+}
+#progress-bar div:nth-child(4), #progress-bar div:nth-child(4):hover, #progress-bar div.active:nth-child(4){
+	border-top-right-radius:75px;
+	border-bottom-right-radius:75px;
+	background-image:none;
+}
+#progress-bar div.active, #progress-bar div:hover{
+	background:#a52100 url("../img/tools/web-scraper/progress-bar-right-bg-active.png") no-repeat right top;
+	}
+#progress-bar div.completed{
+	background:#08852b url("../img/tools/web-scraper/progress-bar-right-bg-completed.png") no-repeat right top;
+	}
+
+
+/*tools pages*/
+.tools h1{
+	font-size:36px;
+	text-transform:initial;
+	margin:40px 0;
+	color:#000;
+	}
+	
+	
+	/* gray box */
+.round-gray-box{
+	background-color:#dddddd;
+	margin:15px -15px;
+	border-radius:4px;
+	padding:20px;
+	font-size:18px;
+	color:#000;
+}
+.margin-top-null {
+	margin-top: 0;
+}
+.justify-align p {
+	text-align:justify;
+}
+.round-gray-box h2{
+	font-weight:400;
+	color:#000;
+	font-size:23px;
+}
+.round-gray-box hr{
+	border-color: #b1b1b1;
+	border-width: 2px;
+	width: 100%;
+}
+.round-gray-box ol {
+    padding-left: 40px;
+}
+.round-gray-box ul{
+	display:block;
+	float:left;
+}
+.round-gray-box ul, .round-gray-box ul li{
+	font-size:23px;
+	color:#000;
+	list-style:none;
+	}
+.round-gray-box ul li:before {
+    content: "• ";
+    color: #e55733;
+}
+
+
+.tools input[type="button"], .landing-page-form input[type="button"]{
+	border:none;
+	font-weight:bold;
+	background:#ff8500 url("../img/tools/web-scraper/arrow-next.png") no-repeat 92% center;
+	font-size:17px;
+	color:#fff;
+	padding:5px 28px 5px 15px;
+	border-radius:4px;
+	outline:none;
+	float:right;
+}
+.tools input[value="Previous"]{
+	padding:5px 15px 5px 28px;
+	margin-right:10px;
+	background:#ff8500 url("../img/tools/web-scraper/arrow-previous.png") no-repeat 8% center;
+}
+.tools input[value="Finish"]{
+    background: #ff8500 url("../img/tools/web-scraper/arrow-next.png") no-repeat 68px center
+}
+.tools input[value="Reset Progress"]{
+	background:none;
+	color:#000;
+	padding:0 0 0 25px;
+	margin-top:10px;
+	font-weight:normal;
+	background:url("../img/tools/web-scraper/reset.png") no-repeat left center;
+}
+
+.tools input[type="email"]{
+	width: 100%;
+	border: none;
+	outline: 0;
+	color: #000;
+	padding: 3px;
+	background-color: #848484;
+	border-radius: 4px;
+}
+
+
+/* Map Data */
+.map-data{
+	font-size:18px;
+}
+.map-data span{
+	font-size:12px;
+	color:#a52100;
+	font-weight:bold;
+	display:block;
+	margin-top:-5px;
+}
+.map-data select{
+	padding:5px;
+	border:none;
+	background-color:#848484;
+	color:#fff;
+	border-radius:4px;
+	outline:none;
+	min-width:149px;
+}
+
+.padding-left-0{ padding-left:0; }
+.padding-right-0{ padding-right:0; }
+.bottom-margin-25{
+	margin-bottom:25px;
+}
+
+/* Upload Data*/
+#upload-file{
+    border:4px dotted #8f8f8f;
+    background:#fff;
+    color:#cacaca;
+    font-size:35px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#upload-data input[type="file"]{
+    font-size:15px;
+    margin: 15px 0 36px 0;
+}
+
+
+#tf-scraper table{
+    font-size:17px;
+}
+
+#tf-scraper table thead{
+    background-color:#08852b;
+    color:#fff;
+}
+#tf-scraper table thead th:focus{
+    outline:none;
+}
+#tf-scraper table td{    
+    background-color:#fff;
+}
+
+
+#tf-scraper select {
+  padding: 5px;
+  border: none;
+  background-color: #848484;
+  color: #fff;
+  border-radius: 4px;
+  outline: none;
+  min-width: 149px;
+}
+
+#choose-files{
+}
+#choose-files a{
+    display:block;
+    float:left;
+    color:#000;
+    background-color:#ff8500;
+    font-size: 16px;
+    padding:4px 8px;
+    border-radius:4px;
+    margin:0 7px 5px 0;
+}
+
+#choose-files span{
+    display:block;
+    float:left;
+    position: relative;
+	cursor: pointer;
+}
+
+#choose-files span img{
+    cursor:pointer;
+    position: absolute;
+    right: 2px;
+    top: -5px;
+}
+
+#choose-files a.selected{
+    background:#a52100 url("../img/tools/web-scraper/icon-completed.png") no-repeat 95%; center;
+    background-size:16%;
+    color:#fff;
+    padding:4px 30px 4px 8px;
+}
+
+.margin-top-90{ margin-top: 90px; }
+.margin-top-30{ margin-top: 30px; }
+.margin-top-10{ margin-top: 10px; }
+
+
+.landing-page-form input[type="button"] {
+    float:left;
+    background-image: none;
+    padding:2px 5px;
+}
+.landing-page-form input[value="Go"] {
+    width:67px;
+}
+.landing-page-form input[type="text"],
+.landing-page-form input[type="email"] {
+    width: 100%;
+    border: 1px solid #004d16;
+    outline: 0;
+    color: #000;
+    padding:3px;
+}
+
+
+/*sign up*/
+#signUp label {
+    font-weight: bold;
+    font-size: 13px;
+}
+#signUp h4 {
+    text-transform: none;
+    font-size: 26px;
+}
+#signUp textarea {
+    resize: none;
+}
+
+
+.div-center {
+    float: none;
+    margin: auto;
+}
+
+.twitter-login {
+	min-height:468px;
+}
+
+.twitter-login h3{
+	font-size:24px;
+	color: #000;
+	margin:40px 0 30px 0;
+	font-weight:normal;
+	}
+.twitter-login label{
+	font-size: 18px;
+}

@@ -1,0 +1,27 @@
+{% load static %}
+<div class="section-title">				
+	<h1>Web Scraper</h1>
+	<div class="col-md-12">
+		<div class="row" id="progress-bar">
+			<div class="col-md-3 completed"><span><img src="{% static 'img/tools/web-scraper/icon-completed.png' %}"/></span>Instructions</div>
+			<div class="col-md-3 completed"><span><img src="{% static 'img/tools/web-scraper/icon-completed.png' %}"/></span>Upload a Data</div>
+			<div class="col-md-3 completed"><span><img src="{% static 'img/tools/web-scraper/icon-completed.png' %}"/></span>Map Data</div>
+			<div class="col-md-3 active"><span>4</span>Done !</div>
+		</div>
+		<div class="row">
+			<input type="button" value="Reset Progress" ng-click="resetProgress(true)" />
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="row round-gray-box">
+			Your scraping request has been successfully created.<br/>
+
+You will receive an email with a link to download the results once completed!
+		</div>
+		<div class="row bottom-margin-30">
+			<input type="button" value="Create New Scrape Job" ng-click="resetProgress(false)" />
+			<input type="button" value="Previous" ng-click="previousPage()" />
+		</div>
+	</div>
+</div>
+			

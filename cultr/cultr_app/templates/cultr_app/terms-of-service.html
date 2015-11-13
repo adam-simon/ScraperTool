@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!--Basic Page Needs-->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CULTR - A toolkit for scraping culture in action</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css"  href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome/css/font-awesome.css' %}">
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css"  href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css"  href="{% static 'css/custom.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="{% static 'js/modernizr.custom.js' %}"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+<body>
+<!--Navigation-->
+<nav id="tf-menu" class="navbar navbar-default navbar-inner">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		<div class="col-xs-7">
+			<div class="row">
+				<a class="navbar-brand" href="#"><img src="{% static 'img/logo.png' %}" width="100%" /></a>
+			</div>
+			<div class="row punchline">A toolkit for scraping culture in action</div>
+		</div>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="{% url 'home' %}" class="page-scroll"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+				<li><a href="#tf-about" class="page-scroll"><span class="glyphicon" aria-hidden="true"></span> Placeholder</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tool <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="#">Image Scraper</a></li>
+						<li><a href="tool-webScraper-instructions.html">Web Scraper</a></li>
+						<li><a href="#">Tweett Network Scraper</a></li>
+						<li><a href="#">Identity Scraper</a></li>
+						<li><a href="#">Tweet Scraper</a></li>
+					</ul>
+			</li>
+				<li><a href="#tf-about"><img src="{% static 'img/log-out.png' %}"/></a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+<!--Web Scraper Tool-->
+<div id="tf-scraper" class="tools">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title">
+					<h1>Terms of Service Agreement</h1>
+					<div class="col-md-12">
+						<div class="row round-gray-box margin-top-null justify-align">
+							<p>The Product is licensed only on the condition that you (referred to by the terms the “USER”, and “YOU”) agree to the terms and conditions set forth below in this Agreement. PLEASE CAREFULLY READ ALL THE TERMS OF THIS LICENSE AGREEMENT.</p>
+
+<p>IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, YOU ARE NOT AUTHORIZED TO USE THE PRODUCT.</p>
+
+<ol>
+    <li>
+        <strong>PRODUCT</strong>:
+        As used in this agreement “Product” shall mean software to help YOU access and analyze text and image-based data found on the Web (collectively, the “Services”) directly and through the website and associated domains of http://cultr.business.ualberta.ca (the “Site”).
+    </li>
+    <li>
+    <strong>LICENSE TO USE</strong>: WE hereby grant YOU a personal, non-exclusive, non-transferrable, and non-assignable worldwide right to access and use the Product (the “License”) for internal use only solely on the terms, conditions and restrictions contained in this Agreement. The rights granted to YOU shall be subject to the Restrictions set out in Section 6 below. The License does not encumber OUR right to use the Product, Service or Site for any purpose.
+    </li>
+    <li>
+    <strong>AUTHORIZED USER(S)</strong>: YOU are permitted to use that number of copy or copies which YOU have paid for, and which YOU are expressly licensed and authorized to use, as shown through a user identification reference provided by US (“User ID”). WE will provide YOU with one User ID for each account held by YOU, thereby permitting you access to the Product on one computer at a time through the Site. You agree to fully and accurately provide the information requested by us when setting up your accounts and to regularly update such information. Your failure to do so may result in the cancellation of your account and loss of Services. User ID(s) are only licensed for use by YOUR employees, or agents over whom YOU have direct control and who agree to abide by the terms of this Agreement (each such person will be considered an “Authorized User”). YOU will be directly liable for any infringement of the terms of the Agreement by an Authorized User. YOU expressly agree that the number of Authorized Users will in no case exceed the number of User IDs.
+    </li>
+    <li>
+    <strong>LICENSE FEE</strong>: As part of the consideration for the rights granted by US to YOU under the Agreement, USER agrees to pay for access and use of the Product and Services (the “License Fee”). The License Fee shall be due immediately upon acceptance of this Agreement and be paid in full prior to the granting of access to the Product.
+    </li>
+    <li>
+        <strong>OWNERSHIP</strong>: YOU acknowledge that any and all knowledge, know-how and/or techniques relating to the Product, as may be modified or enhanced, in whole or in part, is and will remain OUR sole and absolute property and WE own any and all right, title and interest in and to the Product and any modifications, suggestions, ideas, enhancement requests, feedback, recommendations or other information provided by USER to the Product, Service or Site. YOU further acknowledge that all inventions, discoveries, improvements, software, copyright, know-how or other intellectual property, whether or not patentable or copyrightable, created by or on behalf of US prior to, after the termination of, or during the course of this Agreement pertaining to the Product is and will remain OUR sole and absolute property. No right, title or interest in or to any of OUR official mark, trademarks and service marks, logos, slogans, taglines or trade name is granted to YOU under this Agreement. USER will notify US of unauthorized use of the Product, Service or Site by a third party if they become aware of it. USER may not remove any copyright notice, trademark notice, and/or other proprietary legend provided to the USER with the Product.
+        </li>
+    <li>
+    <strong>RESTRICTIONS</strong>: Without limiting Section 5, YOU shall not, and shall not authorize any third party to:
+        <ol type="a">
+        <li>make copies of the Product, other than any User ID;</li>
+        <li>distribute any User ID to any third party who is not an Authorized User. Any such copy together with the original must be kept in YOUR possession or control;</li>
+        <li>modify, decompile, disassemble, translate into another computer language, create derivative works, reverse engineer, reverse assemble, decipher or otherwise attempt to discover any programming code or any source code used in the Product (including any source or object code), or disclose any trade secrets relating to the Product.</li>
+        <li>distribute, sell, assign, license, sublicense, lease, trade, rent, loan, publish transfer or otherwise commercially exploit or make available to any third party the Product or any part thereof and/or copies thereof, to others;,</li>
+        <li>use the Product or any part thereof for any purpose other than as specifically permitted herein or in any manner which is otherwise inconsistent with Section 2 above;</li>
+        <li>use, without OUR express permission, OUR name in YOUR advertising, publicity, or otherwise, share or created Internet “links” to the Product or “frame” or “mirror” any of the Product on any other server or wireless or Internet-based device.</li>
+        </ol>
+    </li>
+     <li>
+    <strong>USE OF PRODUCT</strong>: The USER may use the Product only for the purpose as specifically permitted herein and for no other purpose. YOU shall not:
+         <ol type="a">
+         <li>send spam or otherwise duplicative or unsolicited messages in violation of applicable laws;</li>
+         <li>send or store infringing, obscene, threatening, libelous, or otherwise unlawful or tortious material, including material harmful to children or violative of third party privacy rights;</li>
+         <li>send or store material containing software viruses, worms, Trojan horses or other harmful computer code, files, scripts, agents or programs</li>
+         <li>interfere with or disrupt the integrity or performance of the Product, Service or Site or the data contained therein; or</li>
+         <li>attempt to gain unauthorized access to the Product, Service, or Sit or its related systems or networks.</li>
+         </ol>
+    </li>
+     <li>
+    <strong>DELIVERY OF PRODUCT</strong>: The Product may be subject to limitations, delays, and other problems inherent in the use of the Internet and electronic communications. WE are not responsible for delays, delivery failures, or other damage resulting from such problems.
+    </li>
+     <li>
+    <strong>FORCE MAJEURE</strong>: WE shall not be responsible for any omission or delay in providing the Product, including providing access to the Site, where such omission or delay is caused by an event beyond OUR reasonable control, including, without limitation, fire, war, abnormal weather conditions, loss of power or connectivity, act of god, act of sabotage, labour dispute, governmental regulation, governmental request or requisition for national defense.
+    </li>
+     <li>
+    <strong>MAINTENANCE AND REPAIR</strong>: WE reserve the right to conduct regular maintenance on OUR computer systems from time to time which may interrupt access to the Product without notice to USER. In addition, WE reserve the right to undertake emergency repairs to OUR computer systems as and when required without notice to USER. WE will endeavour to notify USER of any service disruptions as soon as is practicable through general announcements made on the Site, other social media or through the email address associated with the User ID.
+    </li>
+     <li>
+    <strong>MODIFICATION TO PRODUCT</strong>: WE reserve the right to modify the Product, Service or Site at any time without notice. In the event of a modification to the Product, USER will have access to the modified version.
+    </li>
+     <li>
+    <strong>TERM</strong>: This Agreement is effective until terminated. This Agreement terminates:  (a) at YOUR election, at any time; or.  (b) immediately without notice or reimbursement of License Fee to USER from US if YOU fail to comply with any provision of this Agreement, at which time YOU must immediately stop using the Product. Any breach of USER payment obligations or unauthorized use of the Product will be deemed a material breach of this Agreement.</br>
+WE reserve the right to cancel Service or access to the Product or Site at any time without prior notice to USER. Notice of termination of Services by US may be sent to the contact e-mail associated with your account. Upon termination, WE have the right to delete all data, files, or other information that is stored in your account. Should WE cancel Service or access to the Produce or Site, and USER has an active registration but has not completed the assessments provided by the Product, the USER may request in writing a repayment of the License Fee.
+    </li>
+     <li>
+    <strong>REPRESENTATION OF AUTHORITY</strong>: YOU represent and warrant that YOU possess the legal authority to enter into this Agreement, and that YOU will be financially responsible for YOUR use of the Product. YOU agree to be responsible for all License Fees (if any), costs, charges and taxes arising out of YOUR use of the Product. YOU are responsible for supplying any hardware or software necessary to use the Product pursuant to this Agreement.
+    </li>
+     <li>
+    <strong>LINKS TO THIRD PARTY WEBSITES; NO IMPLIED ENDORSEMENT</strong>: The Site and Service may contain links to other web sites owned by third parties. WE, OUR servants, students, agents, officers, and employees do not endorse the website(s) and have no responsibility for the content of the linked website(s) YOU agree that WE shall not be responsible for any loss or damage of any sort incurred as a result of any such links or as the result of the presence of such links on the Site or through use of the Product.
+    </li>
+<li>
+<strong>DISCLAIMER OF WARRANTY:</strong> THE PRODUCT, THE SITE, AND SERVICES ARE PROVIDED TO YOU BY US “AS IS,” “AS AVAILABLE,” “WITH ALL FAULTS” AND WITHOUT ANY WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMISSIBLE UNDER APPLICABLE LAW, WE EXCLUDE ALL WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF TITLE, MERCHANTIBILITY, FITNESS OF THE PRODUCT FOR A PARTICULAR PURPOSE AND THAT ACCESS TO THE SITE, THE SERVICE AND/OR THE PRODUCT AVAILABLE ON OR THROUGH THE SITE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS, IF ANY, WILL BE CORRECTED. WE DO NOT MAKE ANY REPRESENTATIONS ABOUT THE ACCURACY, RELIABILITY, CURRENCY, QUALITY, COMPLETENESS, USEFULNESS, PERFORMANCE, SECURITY, LEGALITY OR SUITABILITY OF THE PRODUCT, THE SERVICES, OR THE SITE. WE MAKE NO WARRANTIES, REPRESENTATIONS, STATEMENTS OR GUARANTEES (WHETHER EXPRESS, IMPLIED IN LAW OR RESIDUAL) REGARDING THE SITE OR THE CONTENTS ACCESSIBLE THROUGH THE SITE OR ANY OTHER AFFILIATED OR SUBSIDIARY WEBSITE INCLUDING USER AREAS. WE DO NOT WARRANT THAT THE PRODUCT, THE SERVICE, THE SITE OR THE SERVER(S) THAT MAKE THE PRODUCT AVAILABLE TO THE USER ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. IN PARTICULAR, NOTHING IN THIS AGREEMENT IS OR WILL BE CONSTRUED AS: (a) A WARRANTY OR REPRESENTATION BY US AS TO ANY INTELLECTUAL PROPERTY RIGHTS IN THE PRODUCT; (b) AN OBLIGATION TO FURNISH ANY ITEM, SOFTWARE, TECHNOLOGY, OR TECHNOLOGICAL INFORMATION OTHER THAN THE PRODUCT; (c) AN OBLIGATION TO CORRECT ERRORS DEEMED TO BE INTERNAL TO THE PRODUCT (“MALFUNCTIONS”) THAT ARISE IN ANY VERSION OF THE PRODUCT DELIVERED TO YOU. WE DO NOT WARRANT THAT ANY MALFUNCTIONS CAN OR WILL BE CORRECTED NOR THAT WE WILL DEVELOP OR PROVIDE YOU WITH ANY OPERATIONS, CAPABILITIES, OR FEATURES NOT PRESENT IN THE VERSION OF THE PRODUCT DELIVERED TO YOU UNDER THIS AGREEMENT.
+    </li>
+    <li>
+        <strong>LIMITATION OF LIABILITY</strong>: WE, OUR SERVENTS, STUDENTS, AGENTS, OFFICERS, AND EMPLOYEES ARE NOT LIABLE TO YOU, YOUR AUTHORIZED USERS, OR ANY OTHER PERSON OR ENTITY FOR ANY LIABILITY, LOSS OR DAMAGES OF ANY KIND CAUSED OR ALLEGED TO HAVE BEEN CAUSED, EITHER DIRECTLY OR INDIRECTLY, INCLUDING WITHOUT LIMITATION ANY PUNITIVE, EXEMPLARY, CONSEQUENTIAL, INCIDENTAL, INDIRECT OR SPECIAL DAMAGES (INCLUDING, WITHOUT LIMITATION, ANY PERSONAL INJURY, LOST PROFITS, BUSINESS INTERRUPTION, LOSS OF PROGRAMS, IDENTITY THEFT, OR OTHER DATA ON YOUR COMPUTER OR OTHERWISE ARISING FROM OR IN CONNECTION WITH USE OF THE SITE, THE SERVICES, OR THE PRODUCT, EVEN IF SUCH THE USER OR AUTHROIZED USERS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS(ES) AND/OR DAMAGES. OUR TOTAL LIABILITY WILL BE LIMITED TO THE AMOUNT OF THE LICENSE FEES (IF ANY) PAID UNDER THIS AGREEMENT.
+    </li>
+<li>
+<strong>EXCLUSIVE REMEDY</strong>: IN THE EVENT OF ANY PROBLEM WITH THE SITE, THE SERVICES, THE PRODUCT, YOU AGREE THAT YOUR SOLE AND EXCLUSIVE REMEDY IS TO CEASE USING THE SITE, THE SERVICES AND THE PRODUCT. UNDER NO CIRCUMSTANCES SHALL WE BE LIABLE IN ANY WAY FOR YOUR USE OF THE SITE, THE SERVICES, THE PRODUCT, YOUR CONTENT, OR THIRD PARTY USER GENERATED CONTENT AVAILABLE ON OR THROUGH THE SITE OR PRODUCT, INCLUDING, BUT NOT LIMITED TO, ANY ERRORS OR OMISSIONS, ANY INFRINGEMENT OF THE INTELLECTUAL PROPERTY RIGHTS OR OTHER RIGHTS OF THIRD PARTIES, OR FOR ANY LOSS OR DAMAGE OF ANY KIND INCURRED AS A RESULT OF, OR RELATED TO, THE USE OF THE SITE, THE SERVICES, THE PRODUCT, YOUR CONTENT OR ANY THIRD PARTY USER GENERATED CONTENT AVAILBALE ON OR THROUGH THE SITE.
+</li>
+<li>
+<strong>INDEMNIFICATION</strong>: YOU agree to indemnify, hold harmless, and defend US [OUR Board of Governors, Faculty, Staff, Students and Agents](collectively "Indemnified Parties") from and against any and all liability, loss, claim, damages, expense, fines, penalties and surcharges, judgments, demands, causes of action, contracts, suits, action, or proceedings of any kind and expenses which the Indemnified Party or Parties may suffer or incur in connection with any claim arising from or related to
+    <ol type="a">
+    <li>the USER’s use (or anyone using YOUR account or Authorized Users) use of the Services, the Site or the Product,</li>
+    <li>your Content, in any way relating to the Agreement.</li>
+    </ol>
+</li>
+<li>
+<strong>AMENDMENTS</strong>: We reserve the right, in our sole discretion, to modify or replace any part of this Agreement at any time. It is your responsibility to check this Agreement periodically for changes. Your continued use of or access to the Services following the posting of any changes to this Agreement constitutes acceptance of those changes. We may also, in the future, offer new services and/or features through Site (including, the release of new tools and resources). Such new features and/or services shall be subject to the terms and conditions of this Agreement.
+</li>
+                        <li>
+                        <strong>DISPUTES</strong>: ALL DISPUTE TO BE RESOLVED IN THE PROVINCE OF ALBERTA, CANADA. The formation, interpretation and performance of this Agreement and any disputes arising out of it shall be governed by the laws of the Province of Alberta, Canada without regard to its conflicts of laws rules. You agree that by accepting the terms of this Agreement and using the Services, the Site or the Materials, you submit to the exclusive jurisdiction of the Courts of competent authority in the Province of Alberta, Canada.
+                        </li>
+                        <li>
+                        <strong>PRIVACY AND FOIPP</strong>: The personal information requested during assignment of User ID is collected under the authority of Section 33 (c) of the Alberta Freedom of Information and Protection of Privacy (FOIPP) Act and will be protected under Part 2 of that Act. It will be used solely for the purpose of delivering the Product to the USER. We encourage you to read the Privacy Policy of the University of Alberta and how WE collect, use, store and otherwise handle personal information found here: http://ipo.ualberta.ca/.
+                        </li>
+                        <li>
+                        <strong>MISCELLANEOUS</strong>:
+                            <ol type="a">
+                            <li>The provisions of this Agreement are severable in that if any provision in this Agreement is determined to be invalid or unenforceable under any controlling body of law, said provision, will not affect the validity or enforceability of the remaining provisions of this Agreement.</li>
+                                <li>No condoning, excusing or overlooking by US by any failure by YOU to comply with any part of this Agreement shall operate as a waiver by US of its rights under this Agreement, and no waiver shall be inferred from or implied by anything done or omitted by US.</li>
+                                <li>No modification of this Agreement will be binding, unless in writing and accepted by an authorized representative of each party. No agent of OURS is authorized to modify this Agreement verbally.</li>
+                                <li>YOU may not assign this Agreement. WE, acting in OUR sole discretion, may assign this Agreement without notice to YOU.</li>
+                                <li>WE shall have the right to assign OUR rights, duties, and obligations under this Agreement. IN the event of such an assignment, the USER will release, remise and forever discharge US from any and all obligations or covenants.</li>
+                                <li>USE OF THE PRODUCT IS PROHIBITED IN ANY JURISDICTION WHICH DOES NOT GIVE EFFECT TO THE TERMS OF THIS AGREEMENT.</li>
+                                <li>YOU agree that no joint venture, partnership, employment, consulting or agency relationship exists between YOU and US as a result of this Agreement or YOUR use of the Product.</li>
+                                <li>This Agreement is the entire agreement between YOU and US relating to this subject matter. YOU will not contest the validity of this Agreement merely because it is in electronic form.</li>
+                                <li>YOU should print out or download a copy of this Agreement and retain it for YOUR records</li>
+                                <li>YOU consent to the use of the English language in this Agreement and all documents or notices relating to this Agreement. Les parties aux présentes on exigé que le présent contrat et tous autres contrats, documents ou avis afferents auz présentes soient rédigés en lange anglaise.</li>
+                            </ol>
+                        </li>
+</ol>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div class="row">
+				<div class="col-md-3 div-center">
+					<div class="col-md-4 socialmedia"><a href="#"><img src="{% static 'img/socialmedia/facebook.png' %}" /></a></div>
+					<div class="col-md-4 socialmedia"><a href="#"><img src="{% static 'img/socialmedia/twitter.png' %}" /></a></div>
+					<div class="col-md-4 socialmedia"><a href="#"><img src="{% static 'img/socialmedia/linkedin.png' %}" /></a></div>
+				</div>
+			</div>
+	</div>
+</div>
+
+<nav id="footer">
+	<div class="container text-center">
+		<a href="terms-of-service.html">Terms of Service</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="{% url 'home' %}#tf-acknowledgements" class="page-scroll">Acknowledgements</a></br></br>
+		Copyright © 2014 Joel Gehman and Matthew Grimes. All rights reserved.
+	</div>
+</nav>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'js/jquery.1.11.1.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.tablesorter.js' %}"></script>
+
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/SmoothScroll.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.isotope.js' %}"></script>
+
+</body>
+</html>

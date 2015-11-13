@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block navtype %}
+<nav id="tf-menu" class="navbar navbar-default navbar-inner">
+{% endblock %}
+
+{% block navigation %}
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class="nav navbar-nav navbar-right">
+		<li><a href="/home" class="page-scroll"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+		<li><a href="/home#tf-about" class="page-scroll"><span class="glyphicon" aria-hidden="true"></span> Placeholder</a></li>
+		<li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tool <span class="caret"></span></a>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Image Scraper</a></li>
+				<li><a href="/wordscraper">Web Scraper</a></li>
+				<li><a href="#">Tweett Network Scraper</a></li>
+				<li><a href="#">Identity Scraper</a></li>
+				<li><a href="#">Tweet Scraper</a></li>
+			</ul>
+	</li>
+		<li><a href="/home#tf-about"><img src="{% static 'img/log-out.png' %}"/></a></li>
+	</ul>
+</div><!-- /.navbar-collapse -->
+{% endblock %}
+
+{% block content %}
+<!--Web Scraper Tool-->
+<div id="tf-scraper" class="tools" ng-app="scrappingApp">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">	
+			
+				<div ng-view></div>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 div-center">
+				<div class="col-md-4 socialmedia"><a href="#"><img src="{% static 'img/socialmedia/facebook.png' %}" /></a></div>
+				<div class="col-md-4 socialmedia"><a href="#"><img src="{% static 'img/socialmedia/twitter.png' %}" /></a></div>
+				<div class="col-md-4 socialmedia"><a href="#"><img src="{% static 'img/socialmedia/linkedin.png' %}" /></a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Include libraries for scrapping using AngularJS. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-cookies.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/spin.min.js"></script>
+	
+<!-- Include all files such as service, routeProvider and controller for Scrapping App using AngularJS. -->	
+<script type="text/javascript" src="{% static 'wordscraper/js/app.js' %}"></script>
+<script type="text/javascript" src="{% static 'wordscraper/js/instruction.js' %}"></script>
+<script type="text/javascript" src="{% static 'wordscraper/js/parsing.js' %}"></script>
+<script type="text/javascript" src="{% static 'wordscraper/js/mapping.js' %}"></script>
+<script type="text/javascript" src="{% static 'wordscraper/js/done.js' %}"></script>
+<script type="text/javascript" src="{% static 'wordscraper/js/xlsx.js' %}"></script>
+{% endblock %}
